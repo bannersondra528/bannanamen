@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Studio Five Spaces</title>
   <style>
     body {
       margin: 0;
       font-family: 'Helvetica Neue', sans-serif;
-      color: #111;
       background: #fff;
+      color: #111;
+      line-height: 1.6;
     }
 
     header {
@@ -17,6 +18,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
     }
 
     nav a {
@@ -27,46 +33,45 @@
     }
 
     .hero {
-      background: url('https://studiofivespaces.com/_nuxt/img/home-hero-2.8f84235.jpg') no-repeat center center;
-      background-size: cover;
-      height: 90vh;
+      height: 70vh;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       text-align: center;
-      color: white;
+      padding: 0 40px;
     }
 
     .hero h1 {
-      font-size: 48px;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.2;
+      max-width: 600px;
     }
 
-    .about,
-    .portfolio,
-    .contact {
+    section {
       padding: 60px 40px;
-      max-width: 1000px;
+      max-width: 800px;
       margin: 0 auto;
     }
 
-    .portfolio-images {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
 
-    .portfolio-images img {
-      width: calc(50% - 10px);
-      border-radius: 8px;
+    p {
+      margin-bottom: 20px;
     }
 
     footer {
-      padding: 20px 40px;
+      padding: 30px 40px;
       text-align: center;
       background: #f5f5f5;
+      font-size: 14px;
+    }
+
+    a {
+      color: #111;
     }
   </style>
 </head>
@@ -76,31 +81,46 @@
     <div class="logo">Studio Five Spaces</div>
     <nav>
       <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Designing Bold Interiors</h1>
+    <h1>Timeless interiors with character, clarity, and soul</h1>
   </section>
 
-  <section class="about" id="about">
+  <section id="about">
     <h2>About Us</h2>
-    <p>Studio Five Spaces is a multidisciplinary design studio creating thoughtful and expressive interiors tailored to each space and story.</p>
+    <p>Studio Five Spaces is a boutique interior design studio rooted in the belief that a well-designed space can shape the way we live, feel, and connect. With a passion for storytelling and a commitment to craftsmanship, we design environments that are both aesthetically grounded and deeply personal.</p>
+    <p>Founded by creatives with backgrounds in architecture, art direction, and interior styling, our studio thrives at the intersection of form and feeling. Every detail — from layout to lighting — is thoughtfully considered to serve a greater narrative.</p>
   </section>
 
-  <section class="portfolio" id="portfolio">
-    <h2>Selected Work</h2>
-    <div class="portfolio-images">
-      <img src="https://studiofivespaces.com/_nuxt/img/1.1ab496a.jpg" alt="Project 1" />
-      <img src="https://studiofivespaces.com/_nuxt/img/2.0c6e8a6.jpg" alt="Project 2" />
-    </div>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We offer a range of design services tailored to residential, commercial, and boutique hospitality spaces. Whether you're refreshing a single room or launching a new property, we’re here to translate your vision into a compelling and cohesive interior experience.</p>
+    <p><strong>Our core offerings include:</strong></p>
+    <ul>
+      <li>Full-service interior design and spatial planning</li>
+      <li>Furniture and material sourcing</li>
+      <li>Custom millwork and cabinetry design</li>
+      <li>Art curation and styling</li>
+      <li>On-site consulting and project coordination</li>
+    </ul>
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email us at <a href="mailto:info@studiofivespaces.com">info@studiofivespaces.com</a></p>
+  <section id="approach">
+    <h2>Our Approach</h2>
+    <p>We approach each project with curiosity, intention, and respect for the space’s history and future. No two spaces — and no two clients — are the same, which is why our work is never formulaic. We begin by listening: to your story, your goals, and your lifestyle.</p>
+    <p>Through collaboration and careful refinement, we craft environments that feel lived-in, layered, and enduring. Our process is transparent and grounded, ensuring that every choice — from big-picture concepts to finishing touches — aligns with your needs and the soul of the space.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you're starting a new project or simply want to say hello, we'd love to hear from you. We take on a limited number of clients each season to ensure focused, high-quality work, and we welcome both local and remote collaborations.</p>
+    <p>Email us at <a href="mailto:info@studiofivespaces.com">info@studiofivespaces.com</a><br />
+    Or follow our studio updates on Instagram @studiofivespaces</p>
   </section>
 
   <footer>
